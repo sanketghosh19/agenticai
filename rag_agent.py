@@ -142,7 +142,7 @@ class RAGAgent:
 
 if __name__ == "__main__":
     # Path to the Excel file produced by linkedin_scraper.py
-    excel_file_path = "linkedin_profiles.xlsx"  # Adjust path if necessary
+    excel_file_path = "linkedin_details.xlsx"  # Adjust path if necessary
     agent = RAGAgent(excel_file=excel_file_path)
     
     # Example query to test the agent
