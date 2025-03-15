@@ -1,12 +1,10 @@
 import requests
-from bs4 import BeautifulSoup
 from googlesearch import search
 from sentence_transformers import SentenceTransformer
 import chromadb
 from chromadb.config import Settings
 import logging
 from urllib.parse import urlparse
-from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
@@ -42,7 +40,7 @@ logging.info("Extracted LinkedIn usernames: %s", usernames)
 # --- Step 3: Retrieve LinkedIn profile details from RapidAPI ---
 rapidapi_url = "https://linkedin-api8.p.rapidapi.com/"
 rapidapi_headers = {
-    "x-rapidapi-key": "18723f7a67mshdb28cbdeb43a159p1d926ajsn3542bef6af44",  # Use your actual key
+    "x-rapidapi-key": "ce90f77b98msh21b88e114f61f4ep1c3419jsn3f83c3babe93",  # Use your actual key
     "x-rapidapi-host": "linkedin-api8.p.rapidapi.com"
 }
 

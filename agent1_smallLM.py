@@ -1,4 +1,4 @@
-
+from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 # --- Step 6: Use a Small Language Model for RAG Demonstration ---
 def generate_response_with_rag(query, retrieved_documents):
     # Load a small language model (e.g., distilgpt2)
